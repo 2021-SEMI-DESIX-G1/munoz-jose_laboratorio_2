@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #2</title>
+</head>
+<body>
+    <h2>Pregunta 1</h2>
+    <p>¿Qué es Javascript y en qué se asemeja a Java?<br>
+       Javascript es un lenguaje de scripting multiplataforma y orientado a objetos. Es un lenguaje pequeño y liviano. <br>
+       Javascript no es lo mismo que Java, solamente las palabras se parecen, pero son lenguajes completamentes distintos, desde su filosofía
+       forma de construir con ellos.
+    </p><br>
+    <h2>Pregunta 2</h2>
+    <p class="Problema2_suma"></p>
+    <p class="Problema2_resta"></p>
+    <p class="Problema2_multiplicacion"></p>
+    <p class="Problema2_division"></p>
+
+    <h2>Pregunta 3</h2>
+    <p class="Problema3_concat"></p>
+
+    <h2>Pregunta 4</h2>
+    <p class="Problema4_tipo"></p>   
+
+    <h2>Pregunta 5</h2>
+    <p class="Problema5_objeto"></p>
+    <script>
+        var _variable1 = 10;
+        var _variable2 = 5;
+
+        console.log('Problema 2');
+        //Imprimir Suma
+        console.log(`La suma de la variable 1 y la variable 2 es: ${_variable1 + _variable2}`);
+        document.querySelector('.Problema2_suma').textContent = `La suma de la variable 1 y la variable 2 es: ${_variable1 + _variable2}`;
+        // Imprimir Resta
+        console.log(`La resta de la variable 1 y la variable 2 es: ${_variable1 - _variable2}`);
+        document.querySelector('.Problema2_resta').textContent = `La resta de la variable 1 y la variable 2 es: ${_variable1 - _variable2}`;
+
+        // Imprimir Multiplicación
+        console.log(`La multiplicación de la variable 1 y la variable 2 es: ${_variable1 * _variable2}`);
+        document.querySelector('.Problema2_multiplicacion').textContent = `La multiplicación de la variable 1 y la variable 2 es: ${_variable1 * _variable2}`;
+
+        // Imprimir División
+        console.log(`La división de la variable 1 y la variable 2 es: ${_variable1 / _variable2}`);
+        document.querySelector('.Problema2_division').textContent = `La división de la variable 1 y la variable 2 es: ${_variable1 / _variable2}`;
+        
+
+        //Problema 3
+        console.log('Problema 3');
+        let _variable3 = 'Jose';
+        let _variable4 = 'Munoz';
+        // Imprimir la concatenación de las variables
+        console.log(`La concatenación de las variables es: ${_variable3 + _variable4}`);
+        document.querySelector('.Problema3_concat').textContent = `La concatenación de las variables es: ${_variable3 + _variable4}`;
+
+        //Problema 4
+        const _variable5 = 1.45;
+        // Imprimir el tipo de variable
+        console.log(`El tipo de variable es: ${typeof(_variable5)}`);
+        document.querySelector('.Problema4_tipo').textContent = `El tipo de variable es: ${typeof(_variable5)}`;
+
+        //Problema 5
+         const _variable6 = {numero: 4, texto: 'Hola Mundo!', booleano: true, vacio: null};
+        // Imprimir el objeto
+        console.log(_variable6);
+
+        document.querySelector('.Problema5_objeto').textContent = JSON.stringify(_variable6);
+
+            </script>
+</body>
+</html>
